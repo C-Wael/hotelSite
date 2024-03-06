@@ -1,0 +1,1026 @@
+/*
+    Author  : Wael.charni@outlook.fr
+    Date    : 06/09/2021
+    Version : V.1.0
+    Couleurs besoin : 
+        #ddc279 (doré)
+        #383735 (gris)
+        #c4a5a1 (rose logo)
+    font-family: 'Roboto', sans-serif;
+*/
+
+/*---------------------------------------------------------------------*/
+/* GLOBAL */
+/*---------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url(../img/triangle-mosaic.png);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+dl, ol, ul, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+/* typo */
+/*--------------------*/
+.Monserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* others */
+/*--------------------*/
+.paddingP {
+    margin-bottom: 12px;
+}
+/* links */
+/*--------------------*/
+
+/* forms */
+/*--------------------*/
+
+/* table */
+/*--------------------*/
+
+/* buttons */
+/*--------------------*/
+/* Bouton doré */
+
+.btn-or {
+    background-color: #ddc279;
+    border-color: #ddc279;
+}
+
+.btn-or:hover{
+    background-color: #f7f0e8;
+    color: #c4a5a1;
+}
+
+/*---------------------------------------------------------------------*/
+/* LAYOUT */
+/*---------------------------------------------------------------------*/
+
+/* header */
+/*--------------------*/
+
+#div_logo{
+    background-color: black;
+    text-align: center;
+}
+
+#div_logo img{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 100px;
+}
+
+/* Menu en dessous du Header */
+
+/*menu burger déroulant*/
+
+.positionSticky {
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
+}
+
+nav 
+{
+    margin: 0px auto;
+    width: 100%;
+    height: 100px;
+    background: black;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.positionSticky nav label {
+    text-align: left;
+}
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_pages img{
+    height: 35px;
+}
+ 
+nav .main_pages a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.positionSticky nav a:hover 
+{
+    background: #c4a5a1;
+    color: black;
+}
+
+.navSticky label, #toggle
+{
+    display: none;
+}
+
+#reservationBtn{
+    background-color: #ddc279;
+    color: black;
+}
+
+#reservationBtn:hover{
+    background-color: #c4a5a1;
+    color: black;
+}
+
+/* Menu burger responsive */
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #c4a5a1;
+        height: 350px;
+    }
+ 
+    nav .main_pages a {
+        width: 100%;
+
+    }
+ 
+    .navSticky label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+
+/* RESERVATION SOUS LE HEADER */
+
+
+.dRow div {
+    display: inline-block;
+}
+
+.divOne {
+    margin-top: 35px;
+
+    flex: 3;
+}
+
+.ouP{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(221, 194, 121);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.verifieP{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+
+}
+
+.divTwo{
+    flex: 1;
+    margin-top: 8px;
+}
+.divThree{
+    flex: 1;
+    margin-top: 8px;
+}
+.divFour{
+    flex: 1;
+    margin-top: 8px;
+}
+
+.divFive {
+    margin-top: 25px;
+    flex: 1;
+}
+.divTwo label {
+    color: white;
+}
+.divThree label {
+    color: white;
+}
+.divFour label {
+    color: white;
+}
+
+
+
+#div_underHeader2{
+    background-color: #383735 ;
+    height: 100px;
+    border-bottom: 1.5px solid #ddc279 ;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.underHeaderReservation {
+    background-color: #f7f0e8;
+    color: black;
+    border-radius: 7px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0.5vw;
+    font-size: 20px;
+}
+
+.underHeaderVoir {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ddc279;
+    color: black;
+    border-radius: 7px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0.5vw;
+    margin: 0 0.5vw;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+}
+
+.underHeaderVoir:hover {
+    background-color: #f7f0e8;
+    color: #c4a5a1;
+    border-radius: 7px;
+    
+}
+
+.underHeaderReservation:hover{
+    color: white;
+    background-color: #ddc279;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.divTwo select,.divThree input[type=date], .divFour input[type=date] {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 7px;
+    justify-content: center;
+    align-content: center;
+    height: 35px;
+    margin: 7px;
+    padding: 8px 0.2vw;
+}
+/* nav */
+/*--------------------*/
+
+/* main */
+/*--------------------*/
+/* CAROUSEL */
+main {
+    margin-top: 60px;
+}
+
+.borderOr{
+    border: 2px solid #ddc279;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+  
+/* Declare heights because of positioning of img element */
+.carousel-item {
+height: 30rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+
+
+/* Dark img */
+
+.imgDark {
+    background:rgba(0, 0, 0, 0.6);
+    padding: 15px 0px 15px 0px;
+}
+/* section */
+/*--------------------*/
+/* articles float */
+
+.img-left {
+	float: left;
+	margin-right: 10px;
+}
+.img-right {
+	float: right;
+	margin-left: 10px;
+}
+
+article img {
+    width: 450px;
+    height: 200px;
+    object-fit: cover;
+    top:0; left:0;
+    border: 2px solid #ddc279;
+}
+
+article p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+article a, h1 {
+    color: #c4a5a1;
+}
+
+article a:hover{
+    color: grey;
+}
+
+
+.opacityT1:hover {
+    opacity: 0.7;
+}
+
+/* Map */
+
+.boiteMapContact {
+    margin-top: 80px;
+    background-color: #ddc279;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    
+}
+
+.boiteContact {
+    font-family: 'Montserrat', sans-serif;
+    flex: 3.5;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: 2px solid black;
+    margin-right: 10%;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.mapRue {
+    flex: 5;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.boiteContact h3  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.boiteContact a, .mapRue a{
+    color: black;
+}
+
+.boiteContact a:hover, .mapRue a:hover{
+    color: darkcyan;
+}
+
+.boiteContact img{
+    height: 25px;
+}
+
+
+.mapRue h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.boiteContact p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    color: black;
+}
+
+.phonePart {
+    margin-bottom: 23px;
+    margin-top: 20px;
+}
+
+.phonePart p{
+    display: inline-block;
+}
+
+.phonePart img{
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.mailPart {
+    margin-bottom: 23px;
+}
+
+.mailPart p{
+    display: inline-block;
+}
+
+.mailPart img{
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.letterPart {
+    margin-bottom: 23px;
+
+}
+
+.letterPart img{
+    display: inline-block;
+    margin-bottom: 7px;
+} 
+
+.letterPart p{
+    display: inline-block;
+}
+
+.messagePart p{
+    margin-bottom: 23px;
+}
+
+.messagePart a {
+    text-decoration-line: underline;
+    color: darkcyan;
+    padding: 3px;
+
+}
+
+.messagePart a:hover {
+    text-decoration-line: none;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+/* aside */
+/*--------------------*/
+
+/* FOOTER */
+/*--------------------*/
+
+.dFlex {
+    display: flex;
+}
+
+/* Footer Partie 1 */
+
+.footerOne{
+    flex: 1;
+    margin-top: 20px;
+}
+
+.footerOne li{
+    margin-bottom: 5px;
+}
+
+
+.footerTwo{
+    flex: 1;
+}
+
+.footerTwo img{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.footerTwo button {
+    flex: 1;
+}
+
+.footerTwo input {
+    flex: 5;
+    margin-right: 20px;
+}
+
+.newsletter img, .newsletter h5{
+    display: inline;
+}
+
+.footerThree{
+    flex: 1;
+    margin-top: 20px;
+}
+
+.footerThree img{
+    margin-top: 25px;
+    padding: 3px;
+    height: 50px;
+}
+
+.fb img:hover{
+    border-radius: 3px;
+    background-color: white;
+}
+
+.twi img:hover{
+    border-radius: 3px;
+    background-color: white;
+}
+
+.ig img:hover{
+    border-radius: 3px;
+    background-color: white;
+}
+
+.pint img:hover{
+    border-radius: 3px;
+    background-color: white;
+}
+
+.trp img:hover{
+    border-radius: 3px;
+    background-color: white;
+}
+
+
+
+/* Footer Partie 2 */
+footer {
+    font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	background-color:black;
+	color: white;
+	padding: 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.mentionsLegales{
+    border-top: 1px solid #ddc279;
+	font-size: 16px;
+	margin-bottom: 0;
+    margin-top: 25px;
+    padding-top: 25px;
+    font-weight: 400;
+}
+footer i {
+	margin: 10px;
+}
+
+footer a {
+	color: white;
+    margin: 0 20px;
+}
+
+footer h5 {
+    color: #ddc279;
+}
+
+footer a:hover {
+	color: grey;
+}
+
+/* Footer Bouton "retour en haut" */
+
+.totop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color:#ddc279;
+    color: black;
+    border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	z-index: 100;
+}
+
+.totop i {
+	margin: 0;
+	font-size: 35px;
+}
+
+/* Footer COPYRIGHT */
+.copyrightParimis{
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.phraseFooter {
+    color: grey;
+}
+
+footer {
+    padding: 28px 20px 28px 20px;
+}
+
+/* PAGE CHHAMBRE */
+.boiteMenu {
+    height: 100%;
+    width: 100%;
+    background-color: #383735;
+    padding: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1.5px solid #ddc279 ;
+    border-top: 1.5px solid #ddc279 ;
+}
+
+.boiteMenu h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #c4a5a1;
+}
+
+.boiteMenu p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.titreDescription {
+    background-color: #f7f0e8;
+    padding: 25px;
+    flex: 2;
+}
+
+.titreDescription h3{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.titreDescription .underHeaderReservation{
+    background-color: #ddc279;
+}
+
+.descriptionChambre {
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.imgPart {
+    background-color: #383735;
+    padding: 25px;
+    flex: 2;
+}
+
+
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+.menuChambre .priceD {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #383735
+}
+
+.menuChambre h3 {
+    color: #c4a5a1;
+
+}
+
+.menuCarte a, .boiteCarteMenu a:hover{
+    background-color: #383735;
+    color: white;
+}
+
+/* Page Restaurant */
+
+.menuCarte .priceD {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #383735
+}
+
+
+.menuCarte {
+    margin-bottom: 50px;
+}
+
+.menuCarte h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #c4a5a1;
+}
+
+.menuCarte p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+/* .menuCarte:last-child{
+    margin-bottom: 0;
+} */
+
+#typeCarte {
+    color: black;
+    font-weight: 400;
+}
+
+.boiteCarteMenu {
+    text-align: center;
+    padding-top: 35px;
+}
+
+/* CONTACT FORMULAIRE */
+
+.contactTitle {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.formContact {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+
+.formContact fieldset {
+	margin: 20px 0;
+	padding: 20px;
+	border: 1px solid #e8e8e8;
+	background-color: #e8e8e8;
+    border-radius: 5px;
+}
+.formContact label,.formContact input,.formContact select {
+	display: block;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+.formContact label {
+	margin-bottom: 5px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.formContact label.required:after {
+	content: ' *';
+}
+.formContact textarea, 
+.formContact input, .formContact select {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #e8e8e8;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #fff;
+}
+.formContact textarea:hover, 
+.formContact input:hover {
+	border-color: #ceced0;
+}
+.formContact textarea:focus, 
+.formContact input:focus {
+	outline-color: #ddc279;
+}
+.formContact textarea {
+	resize: vertical;
+	min-height: 300px;
+	max-height: 600px;
+}
+
+#formulaire{
+    margin-bottom: 50px;
+}
+
+#partieReservation {
+    color: #c4a5a1;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#partieResResto, #partieResSpa {
+    color: #c4a5a1;
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p#boutonForm input[type=submit]{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: #ddc279;
+}
+
+p#boutonForm input[type=submit]:hover{
+    background-color: #c4a5a1;
+}
+
+/* MEDIA QUERIES */
+/*--------------------*/
+@media only screen and (max-width: 1460px){
+
+    .footerThree img{
+        height: 37px;
+    }
+    
+}
+
+@media only screen and (max-width: 1276px){
+
+    .footerMenu1 {
+        flex-direction: column;
+    }
+
+    .footerOne{
+        margin-top: 10px;
+    }
+
+    .footerOne h5, .footerOne li {
+        display: inline-block;
+    }
+
+    .footerOne h5 {
+        margin-bottom: 25px;
+    }
+
+    .footerTwo input{
+        margin-left:5% ;
+    }
+
+    .footerTwo button {
+        margin-right:5% ;
+    }
+
+    .footerTwo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footerThree img{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    #div_underHeader2{
+        display: inline-block;
+        flex-wrap: wrap;
+        height: 410px;
+        width: 100%;
+    }
+
+    .divOne {
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    .divFive {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .underHeaderVoir{
+        display: inline;
+        text-align: center;
+    }
+
+    .boiteChambre{
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .boiteChambreReverse{
+        flex-direction: column-reverse;
+        margin-bottom: 25px;
+    }
+
+    .boiteChambreReverse:last-child{
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .contactTitle {
+        margin-top: -70px;
+    }
+}
+
+@media only screen and (max-width: 995px){
+    .boiteContactContainer {
+        flex-direction: column;
+    }
+
+    .boiteContact {
+        margin-right: 0;
+    }
+
+    #formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 513px){
+    .imgDark {
+        background:rgba(0, 0, 0, 0.6);
+        padding: 10px 10px 15px 10px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    div .underHeaderReservation {
+        margin-left: 10px;
+    }
+    div .verifieP{
+        margin-right: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 419px){
+
+
+    div .verifieP{
+        margin-top: 30px;
+    }
+
+    #div_underHeader2{
+        height: 460px;
+
+    }
+}
+
+
+
+
