@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parimis Hotel Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="inc/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="inc/css/style.css">
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <div id="div_logo">
+          <a href="index.html"><img src="inc/img/icone.png" alt="logo de l'hotel Parimis"></a>
+      </div>
+    </header>
+
+    <!-- MENU BURGER + MENU -->
+    <div class="positionSticky">
+      <nav class="navSticky">
+        <label class="" for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="main_pages">
+            <a href="index.html"><img class="towerIcon" src="inc/img/eiffel-tower.png" alt=""></a>
+            <a href="chambres.html">CHAMBRES</a>
+            <a href="restaurant.html">RESTAURANT</a>
+            <a href="#">SPA</a>
+            <a href="formulaire_contact.html">CONTACT</a>
+            <a id="reservationBtn" href="reservation.html#partieReservation">RESERVATION</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div class="bd-example">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="inc/img/restaurant1.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="inc/img/restaurant2.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+          <img src="inc/img/restaurant3.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="inc/img/restaurant4.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="inc/img/terrasse 4.jpg" alt="">
+          </div>
+  
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"   data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="boiteMenu">
+      <h2>Découvrez notre Restaurant</h2>
+      <p>Savourez des spécialités françaises magnifiquement élaborées, servies dans un cadre élégant et intime, et vivez une expérience culinaire inoubliable. le Restaurant, renové très récemment, dispose de plusieurs étages, un Bar Luxueux au rez-de-chaussée, possibilité de déguster sur la terasse avec une magnifique vue, quant au dernier étage, il dispose d'une baie vitrée donnant sur la ville de Paris et sa tour Eiffel. <br> Le charme du Restaurant du Parimis demeure, et laisse deviner les touches subtiles d’artisans qui magnifient son décor. Alain Ducasse célèbre la renaissance de la mythique brasserie et apporte sa touche créative à la carte.</p>
+    </div>
+    
+        
+
+
+
+    <main class="container menuCarte">
+      <h3 id="typeCarte">Carte Brasserie (midi)</h3>
+      <div class="dFlex boiteChambreReverse">
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <h3>Entrée</h3>
+          <br>
+          <p class="descriptionChambre">Asperges vertes truffées</p><br>
+          <p class="descriptionChambre">mouseline au Château-Chalon</p><br>
+          <p class="priceD">90€</p>
+          <br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+        </div>
+        <div class="imgPart borderOr"><img src="inc/img/menu4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="dFlex boiteChambre">
+        
+        <div class="imgPart borderOr boiteCarteMenu"><img src="inc/img/menu2.png" alt="">
+        </div>
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <br>
+          <h3>Plat</h3>
+          <br>
+          <p class="descriptionChambre">Pièce de turbot de nos côtes Meunière</p><br>
+          <p class="descriptionChambre">macération de cresson/poire vinaigrée</p><br>
+          <p class="priceD">135€</p><br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+
+        </div>
+      </div>
+
+      <div class="dFlex boiteChambreReverse">
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <h3>Dessert</h3>
+          <br>
+          <p class="descriptionChambre">Poire "Passe-Crassane" confite au naturel</p><br>
+          <p class="descriptionChambre">crème de cerfeuil tubéreux / sorbet poire</p>
+
+          <p class="descriptionChambre"></p><br>
+          <p class="priceD">45€</p>
+          <br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+        </div>
+        <div class="imgPart borderOr"><img src="inc/img/menu3.jpg" alt="">
+        </div>
+      </div>
+    </main>
+
+    <section class="container menuCarte">
+    <h3 id="typeCarte">Carte Dégustation</h3>
+      <div class="dFlex boiteChambreReverse">
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <h3>Entrée</h3>
+          <br>
+          <p class="descriptionChambre">Truffe noire du Vaucluse / Compté 18 mois</p><br>
+          <p class="descriptionChambre">au parfum de vin d'Arbois</p>
+          <p class="descriptionChambre"></p><br>
+          <p class="priceD">90€</p>
+          <br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+        </div>
+        <div class="imgPart borderOr"><img src="inc/img/menu6.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="dFlex boiteChambre">
+        
+        <div class="imgPart borderOr boiteCarteMenu"><img src="inc/img/menu1.png" alt="">
+        </div>
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <br>
+          <h3>Plat</h3>
+          <br>
+          <p class="descriptionChambre">Epigramme d'agneau de l'Aveyron au jus vert pimenté</p><br>
+          <p class="descriptionChambre">croquant de légumes
+          <p class="priceD">105€</p><br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+
+        </div>
+      </div>
+
+      <div class="dFlex boiteChambreReverse">
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <br>
+          <h3>Dessert</h3>
+          <br>
+          <p class="descriptionChambre">Transparance de banane</p><br>
+          <p class="descriptionChambre">emulsion fruit de la passion/café</p>
+
+          <p class="descriptionChambre"></p><br>
+          <p class="priceD">45€</p>
+          <br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+        </div>
+        <div class="imgPart borderOr"><img src="inc/img/menu7.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="container menuCarte">
+      <h3 id="typeCarte">Carte Restaurant (soir)</h3>
+      <div class="dFlex boiteChambreReverse">
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <br>
+          <h3>Entrée</h3>
+          <br>
+          <p class="descriptionChambre">Soupe de lait de poule bio</p><br>
+          <p class="descriptionChambre">lard et truffe</p>
+
+          <p class="descriptionChambre"></p><br>
+          <p class="priceD">85€</p>
+          <br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+        </div>
+        <div class="imgPart borderOr"><img src="inc/img/menu8_fg.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="dFlex boiteChambre">
+        
+        <div class="imgPart borderOr boiteCarteMenu"><img src="inc/img/menu9.jpg" alt="">
+        </div>
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <br>
+          <h3>Plat</h3>
+          <br>
+          <p class="descriptionChambre">Noix de riz de Veau Gratinée</p><br>
+          <p class="descriptionChambre">concentration d'un jus d'herbe fraiches</p><br>
+          <p class="priceD">135€</p><br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+
+        </div>
+      </div>
+
+      <div class="dFlex boiteChambreReverse">
+        <div class="titreDescription borderOr boiteCarteMenu">
+          <br>
+          <h3>Dessert</h3>
+          <br>
+          <p class="descriptionChambre">Croquant de Pamplemousse</p><br>
+          <p class="descriptionChambre">confit et cru</p><br>
+
+          <p class="descriptionChambre"></p>
+          <p class="priceD">45€</p>
+          <br>
+          <a class="underHeaderReservation" href="reservation.html#partieResResto">JE RESERVE</a>
+        </div>
+        <div class="imgPart borderOr"><img src="inc/img/menu5.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Comment nous rejoindre:
+    - Station de Métro Alma Marceau à 50 mètres
+    - Station RER C Pont de l’Alma à 250 mètres
+    - Aéroport Roissy - Charles de Gaulle (CDG) à 25 km.
+    - Accès en taxi ou en métro + RER B
+    - Aéroport d’Orly à 16 km.
+    - Accès en, taxi ou direct avec le RER C
+    - Parking public couvert à 100 mètres
+    Transport
+    Air France et toutes les compagnies aériennes internationales desservent l'aéroport international Charles de Gaulle, situé à 25 kilomètres de l'hôtel. Les vols intérieurs assurés par Air France et certaines compagnies aériennes européennes atterrissent à l'aéroport d'Orly, situé à 15 kilomètres de l'hôtel.
+
+    Il est possible de louer tout type de véhicule, de réserver une limousine avec chauffeur ou de recourir aux services des taxis parisiens. L'hôtel propose un service de parking payant à proximité. Les voituriers se chargent gracieusement de garer votre véhicule.
+
+    Accueil à l'aéroport
+    Une hôtesse du Parimis Hôtel vous accueillera à votre descente de l'avion, et vous accompagnera lors des formalités d'immigration et de douane. Pour obtenir des informations ou pour réserver ce service, veuillez contacter l'hôtel. Des frais peuvent s'appliquer.
+
+    Aéroport international Charles de Gaulle (CDG)
+    Durée du trajet 1 heure
+
+    Distance 25 kilomètres
+
+    Depuis les terminaux 1, 2 ou 3, prenez l'A1 en direction du sud vers Paris. Tournez à gauche sur le boulevard périphérique ouest/extérieur et roulez jusqu'à la Porte Maillot. Quittez le périphérique à la Porte Maillot. Prenez le rond-point de la place de la Porte Maillot. Laissez le Palais des congrès de Paris sur votre gauche, et prenez l'avenue de la Grande Armée ; l'Arc de Triomphe est en haut de l'avenue. Tenez la droite dans le rond-point, puis prenez l'avenue des Champs-Élysées lorsque vous atteignez l'Arc de Triomphe. Prenez la troisième rue à droite, juste avant le restaurant Fouquet's. L'hôtel se trouve sur votre droite, au 31 avenue Montaigne.
+
+    Aéroport international d'Orly (ORY)
+    Durée du trajet 40 minutes
+
+    Distance 15 kilomètres
+
+    Quittez le terminal ouest ou sud et prenez l'A6 en direction du nord vers Paris. Continuez sur l'A6 vers le nord. L'A6 rejoint le boulevard périphérique au niveau de la Porte d'Orléans et de la Seine. Suivez le boulevard périphérique vers l'ouest, jusqu'à ce que vous ayez traversé la Seine. Prenez la première sortie sur votre droite après la Seine, au pont du Garigliano, et roulez le long de la Seine jusqu'au pont de l'Alma. La Tour Eiffel est sur votre droite. Dirigez-vous vers la gauche sur la place de l'Alma. Continuez jusqu'à l'avenue George V. L'hôtel se trouve sur la gauche, au 31 avenue George V.
+
+    Gare du Nord (gare ferroviaire de Paris)
+    Durée du trajet 11 minutes
+
+    Distance 5 kilomètres
+
+    Depuis la gare, prenez le boulevard Magenta et tournez à droite à la place de Roubaix. Continuez jusqu'à la place Kossuth, puis tournez à droite au niveau du boulevard Haussmann. Continuez sur la rue La Boétie, puis tournez à droite sur la célèbre avenue des Champs-Élysées. Tournez à gauche juste après le restaurant Fouquet's, sur l'avenue George V. L'hôtel se trouve sur la droite, au 31 avenue George V.
+    -->
+
+    
+
+    
+    
+
+    <!-- FOOTER -->
+    <footer class="">
+      <div class="dFlex footerMenu1">
+        <!-- FOOTER PARTIE "HOTEL" -->
+        <div class="footerOne">
+          <h5>L'Hôtel</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="">Qui sommes-nous ?</a></li>
+            <li><a href="">Accès</a></li>
+            <li><a href="">Recrutement</a></li>
+            <li><a href="">Avis</a></li>
+          </ul>
+        </div>
+        <!-- FOOTER PARTIE "NEWSLETTER" -->
+        <div class="footerTwo">
+          <form>
+            <div class="newsletter">
+              <img src="inc/img/email.png" alt="">
+              <h5>Newsletter du Parimis Hôtel</h5>
+            </div>
+            <p class="paddingP">Inscrivez-vous à notre Newsletter mensuelle pour recevoir par e-mail TOUS nos bons plans (et un code promo offert après inscription !)</p>
+            <div class="row dFlex">
+              <input id="newsletter1" type="text" class="form-control" placeholder="Adresse e-mail">
+              <button class="btn btn-or">S'inscrire</button>
+            </div>
+          </form>
+        </div>
+        <!-- FOOTER PARTIE SOCIALS -->
+        <div class="footerThree">
+          <h5>Retrouvez-nous sur les réseaux sociaux :</h5>
+          <div>
+            <a class="fb" href="https://www.facebook.com/" target="_blank"><img src="inc/img/facebook.png" alt=""></a>
+            <a class="twi" href="https://twitter.com/" target="_blank"><img src="inc/img/twitter.png" alt=""></a>
+            <a class="ig" href="https://www.instagram.com/" target="_blank"><img src="inc/img/instagram.png" alt=""></a>
+            <a class="pint" href="https://www.pinterest.fr/" target="_blank"><img src="inc/img/pinterest.png" alt=""></a>
+            <a class="trp" href="https://www.tripadvisor.fr/" target="_blank"><img src="inc/img/tripadvisor.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER PARTIE MENTIONS LEGALES -->
+      <div>
+        <p class="mentionsLegales">
+          <a href="">Mentions légales</a>
+          <a href="">CGV</a>
+          <a href="formulaire_contact.html">Contact</a>
+          <a href="">Plan du site</a>
+          <a href="">Imprimer la page</a>
+        </p>
+        <p class="copyrightParimis"><small>&copy; 2021 - PARIMIS</small></p>
+        <p class="phraseFooter"><small>Ce site n'a aucun but commercial. Il est realisé dans le cadre d'un projet d'intégration web au sein de l'organisme de formation DORANCO.</small></p>
+        <!-- BOUTON TO TOP -->
+        <p><a class="totop" href="#"><i class="fas fa-chevron-up fa-2x"></i></a></p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+  </body>
+</html>
