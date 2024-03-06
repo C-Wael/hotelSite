@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parimis Hotel Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="inc/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="inc/css/style.css">
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <div id="div_logo">
+          <a href="index.html"><img src="inc/img/icone.png" alt="logo de l'hotel Parimis"></a>
+      </div>
+    </header>
+
+    <!-- MENU BURGER + MENU -->
+    <div class="positionSticky">
+      <nav class="navSticky">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="main_pages">
+            <a href="index.html"><img class="towerIcon" src="inc/img/eiffel-tower.png" alt=""></a>
+            <a href="chambres.html">CHAMBRES</a>
+            <a href="restaurant.html">RESTAURANT</a>
+            <a href="#">SPA</a>
+            <a href="formulaire_contact.html">CONTACT</a>
+            <a id="reservationBtn" href="reservation.html">RESERVATION</a>
+        </div>
+      </nav>
+    </div>
+
+
+    
+    <!-- CAROUSEL -->
+    <main class="container">
+      <div class="">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- IMAGE CAROUSEL 1 -->
+            <div class="carousel-item active">
+              <img class="borderOr" src="inc/img/paris1.jpg" alt="">
+      
+              <div class="">
+                <div class="carousel-caption imgDark">
+                  <h1 class="Monserrat">Des chambres luxueuses avec vue sur la Tour Eiffel.</h1>
+                  <p class="Roboto paddingP">Découvrez les différentes gammes de chambre que l'Hôtel Parimis vous propose. <br>Décor XVIIIème ultra raffiné, une vue extraordinaire, Parimis, le luxe à la française.</p>
+                  <p><a class="btn btn-lg btn-or Monserrat" href="chambres.html">VOIR TOUTES LES GAMMES</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- IMAGE CAROUSEL 2 -->
+            <div class="carousel-item">
+              <img class="borderOr" src="inc/img/restaurant1.jpg" alt="">
+      
+              <div class="">
+                <div class="carousel-caption imgDark">
+                  <h1 class="Monserrat">Un restaurant Gastronomique sur une merveilleuse vue.</h1>
+                  <p class="Roboto paddingP">Profitez d'une planche parisienne préparée par le Chef Sébastien Roux</p>
+                  <p><a class="btn btn-lg btn-or Monserrat" href="restaurant.html">VOIR LA CARTE</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- IMAGE CAROUSEL 3 -->
+            <div class="carousel-item">
+              <img class="borderOr" src="inc/img/spa1.jpg" alt="">
+      
+              <div class="">
+                <div class="carousel-caption imgDark">
+                  <h1 class="Monserrat">Privatisez un sauna pendant 30 minutes pour votre plus grand plaisir.</h1>
+                  <p class="Roboto paddingP">Découvrez le Spa et les soins que Parimis vous propose. Relaxation et détente garantie.</p>
+                  <p><a class="btn btn-lg btn-or Monserrat" href="#">VOIR LE SPA ET NOS SOINS</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    
+    <!-- RESERVATION SOUS LE CAROUSEL-->
+
+    <div class="container">
+      <div id="div_underHeader2">
+        <div class="dRow divOne">
+          <div class=""><a class="underHeaderReservation" href="reservation.html#partieReservation">JE RESERVE</a></div>
+          <div><p class="ouP">OU</p></div>
+          <div><p class="verifieP">Je vérifie les disponibilités</p></div>
+        </div>
+        
+        <div class="divTwo">
+          <div><label>Choix de Gamme :</label></div>
+          <div>
+            <select name="reservationSelection">
+              <option value="none">Gamme de chambre</option>
+              <option value="classique">Classique</option>
+              <option value="confort">Confort</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="divThree">
+          <div>
+            <label>Arrivée :</label>
+          </div>
+          <div>
+            <input type="date" placeholder="Date d'arrivée :">
+          </div>
+        </div>
+        
+        <div class="divFour">
+          <div>
+            <label>Départ :</label>
+          </div>
+          <div>
+            <input type="date" placeholder="Date de départ :">
+          </div>
+        </div>
+        
+        <div class="divFive">
+          <input type="submit" class="underHeaderVoir" value="VOIR">
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- ARTICLES FLOAT -->
+    <section class="container">
+      <article>
+        <a href="chambres.html"><h2 class="Monserrat">De la Gamme "Classique" aux Suites Luxueuses</h2></a>
+        <a href="chambres.html"><img class="opacityT1 img-left" src="inc/img/hotel-luxe-paris-hotel-meurice-chambre.jpeg" alt="placeholder"></a>
+  
+        <p>Des chambres plus luxueuses les unes que les autres, et décorées dans un style classique XVIIIème.<br> Leur décoration raffinée et délicate évoque le style Louis XVI, et chaque élément de décor a été pensé jusque dans les moindres détails, des tissus soyeux aux meubles d'époque en passant par les gravures anciennes, les bouquets de fleurs, le marbre des salles de bains, sans oublier les équipements ultra-modernes.<br>
+        
+      </article>
+
+      <article>
+        <h2 class="Monserrat"><a href="restaurant.html">Un Trésor de la Gastronomie Française</a></h2>
+        <a href="restaurant.html"><img class="opacityT1 img-right" src="inc/img/img_homard.jpg" alt="placeholder"></a>
+  
+        <p>Situé au cœur du Triangle d'Or, ce trésor de la gastronomie française est classé 3 étoiles par le célèbre guide Michelin.<br> Notre carte mettant en avant des produits locaux ne manquera pas de ravir vos papilles. Du homard de qualité, des huîtres de première fraîcheur, de délicieux poissons et fruits de mer et des plats traditionnels classiques sont servis dans l'ambiance chaleureuse du restaurant.</p>
+      </article>
+
+      <!-- En 2005, Alain Ducasse devient le premier chef triplement 3-étoilés au guide Michelin. -->
+      <article>
+        <h2 class="Monserrat"><a href="restaurant.html">Notre chef : Alain Ducasse, triplement 3-étoilés</a></h2>
+        <a href="restaurant.html"><img class="opacityT1 img-left" src="inc/img/chef.jpg" alt="placeholder"></a>
+  
+        <p>
+          À la fois cuisinier et créateur, Alain Ducasse est un esthète, un artisan du bien vivre et du bien manger. Sur les cartes du restaurant, Alain Ducasse rend hommage à la provenance locale des produits, gage de leur qualité exceptionnelle.<br> Au-delà de la conception des plats du restaurant, il s’implique dans la scénographie et les arts de la table, tout en laissant aux chefs la liberté d’exprimer leur propre interprétation du lieu et de sa ligne éditoriale. </p>
+      </article>
+    
+
+      <article>
+        <h2 class="Monserrat"><a href="">Un Spa haut de gamme pour des soins d'exceptions</a></h2>
+        <a href=""><img class="opacityT1 img-right" src="inc/img/spa22.jfif" alt="placeholder"></a>
+  
+        <p>Parimis vous offre un moment hors du temps sous le signe de la beauté et de la détente. Pour sublimer la beauté, l'institut Parimis allie le savoir-faire des gestes experts à l’efficacité des produits Ransard, conçus spécialement pour le Parimis Institut Spa.<br>Laissez-vous porter par vos sensations et vous ressourcer de l'intérieur, tranquillement, à votre rythme. Tout au plaisir de profiter enfin pleinement de l'instant présent, vous préparez l'avenir... </p>
+          <!-- Conçu comme un sanctuaire entièrement dédié au plaisir des sens, le spa du Parimis accueille chacun de nos hôtes dans son individualité. Avec ses 900 mètres carrés, notre spa compte parmi les plus vastes et remarquables de Paris. -->
+      </article>
+    </section>
+
+    <!-- Comment nous rejoindre:
+    - Station de Métro Alma Marceau à 50 mètres
+    - Station RER C Pont de l’Alma à 250 mètres
+    - Aéroport Roissy - Charles de Gaulle (CDG) à 25 km.
+    - Accès en taxi ou en métro + RER B
+    - Aéroport d’Orly à 16 km.
+    - Accès en, taxi ou direct avec le RER C
+    - Parking public couvert à 100 mètres
+    Transport
+    Air France et toutes les compagnies aériennes internationales desservent l'aéroport international Charles de Gaulle, situé à 25 kilomètres de l'hôtel. Les vols intérieurs assurés par Air France et certaines compagnies aériennes européennes atterrissent à l'aéroport d'Orly, situé à 15 kilomètres de l'hôtel.
+
+    Il est possible de louer tout type de véhicule, de réserver une limousine avec chauffeur ou de recourir aux services des taxis parisiens. L'hôtel propose un service de parking payant à proximité. Les voituriers se chargent gracieusement de garer votre véhicule.
+
+    Accueil à l'aéroport
+    Une hôtesse du Parimis Hôtel vous accueillera à votre descente de l'avion, et vous accompagnera lors des formalités d'immigration et de douane. Pour obtenir des informations ou pour réserver ce service, veuillez contacter l'hôtel. Des frais peuvent s'appliquer.
+
+    Aéroport international Charles de Gaulle (CDG)
+    Durée du trajet 1 heure
+
+    Distance 25 kilomètres
+
+    Depuis les terminaux 1, 2 ou 3, prenez l'A1 en direction du sud vers Paris. Tournez à gauche sur le boulevard périphérique ouest/extérieur et roulez jusqu'à la Porte Maillot. Quittez le périphérique à la Porte Maillot. Prenez le rond-point de la place de la Porte Maillot. Laissez le Palais des congrès de Paris sur votre gauche, et prenez l'avenue de la Grande Armée ; l'Arc de Triomphe est en haut de l'avenue. Tenez la droite dans le rond-point, puis prenez l'avenue des Champs-Élysées lorsque vous atteignez l'Arc de Triomphe. Prenez la troisième rue à droite, juste avant le restaurant Fouquet's. L'hôtel se trouve sur votre droite, au 31 avenue Montaigne.
+
+    Aéroport international d'Orly (ORY)
+    Durée du trajet 40 minutes
+
+    Distance 15 kilomètres
+
+    Quittez le terminal ouest ou sud et prenez l'A6 en direction du nord vers Paris. Continuez sur l'A6 vers le nord. L'A6 rejoint le boulevard périphérique au niveau de la Porte d'Orléans et de la Seine. Suivez le boulevard périphérique vers l'ouest, jusqu'à ce que vous ayez traversé la Seine. Prenez la première sortie sur votre droite après la Seine, au pont du Garigliano, et roulez le long de la Seine jusqu'au pont de l'Alma. La Tour Eiffel est sur votre droite. Dirigez-vous vers la gauche sur la place de l'Alma. Continuez jusqu'à l'avenue George V. L'hôtel se trouve sur la gauche, au 31 avenue George V.
+
+    Gare du Nord (gare ferroviaire de Paris)
+    Durée du trajet 11 minutes
+
+    Distance 5 kilomètres
+
+    Depuis la gare, prenez le boulevard Magenta et tournez à droite à la place de Roubaix. Continuez jusqu'à la place Kossuth, puis tournez à droite au niveau du boulevard Haussmann. Continuez sur la rue La Boétie, puis tournez à droite sur la célèbre avenue des Champs-Élysées. Tournez à gauche juste après le restaurant Fouquet's, sur l'avenue George V. L'hôtel se trouve sur la droite, au 31 avenue George V.
+    -->
+
+    
+
+    <div class="boiteMapContact">
+      <div class="dFlex container boiteContactContainer">
+        <div class="boiteContact">
+         <h3><a href="">Comment nous contacter ?</a></h3>
+          <div class="phonePart">
+            <img src="inc/img/phone.svg" alt="">
+            <p>00 35 85 96 45</p>
+          </div>
+          <div class="mailPart">
+            <img src="inc/img/email_icon.svg" alt="">
+            <p>contact@parimis.com</p>
+          </div>
+          <div class="messagePart">
+            <p>Vous pouvez remplir un <a href="formulaire_contact.html#formulaire">formulaire de contact</a></p>
+            <p>Notre personnel se fera un plaisir de répondre à vos questions, et s'engage à vous répondre dans la journée.</p>
+            <p>Ou nous contacter par courrier</p>
+          </div>
+          <div class="letterPart">
+            <img src="inc/img/boites-aux-lettres.svg" alt="">
+            <p>1 Av. Montaigne, 75008 Paris</p>
+          </div>
+        </div>
+
+        <div class="mapRue">
+          <div>
+            <h3><a href="">Où nous trouver ?</a></h3>
+          </div>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6401922469686!2d2.2998897156746234!3d48.865071179288186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Av.%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1631169593761!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- FOOTER -->
+    <footer class="">
+      <div class="dFlex footerMenu1">
+        <!-- FOOTER PARTIE "HOTEL" -->
+        <div class="footerOne">
+          <h5>L'Hôtel</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="">Qui sommes-nous ?</a></li>
+            <li><a href="">Accès</a></li>
+            <li><a href="">Recrutement</a></li>
+            <li><a href="">Avis</a></li>
+          </ul>
+        </div>
+        <!-- FOOTER PARTIE "NEWSLETTER" -->
+        <div class="footerTwo">
+          <form>
+            <div class="newsletter">
+              <img src="inc/img/email.png" alt="">
+              <h5>Newsletter du Parimis Hôtel</h5>
+            </div>
+            <p class="paddingP">Inscrivez-vous à notre Newsletter mensuelle pour recevoir par e-mail TOUS nos bons plans (et un code promo offert après inscription !)</p>
+            <div class="row dFlex">
+              <input id="newsletter1" type="text" class="form-control" placeholder="Adresse e-mail">
+              <button class="btn btn-or">S'inscrire</button>
+            </div>
+          </form>
+        </div>
+        <!-- FOOTER PARTIE SOCIALS -->
+        <div class="footerThree">
+          <h5>Retrouvez-nous sur les réseaux sociaux :</h5>
+          <div>
+            <a class="fb" href="https://www.facebook.com/" target="_blank"><img src="inc/img/facebook.png" alt=""></a>
+            <a class="twi" href="https://twitter.com/" target="_blank"><img src="inc/img/twitter.png" alt=""></a>
+            <a class="ig" href="https://www.instagram.com/" target="_blank"><img src="inc/img/instagram.png" alt=""></a>
+            <a class="pint" href="https://www.pinterest.fr/" target="_blank"><img src="inc/img/pinterest.png" alt=""></a>
+            <a class="trp" href="https://www.tripadvisor.fr/" target="_blank"><img src="inc/img/tripadvisor.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER PARTIE MENTIONS LEGALES -->
+      <div>
+        <p class="mentionsLegales">
+          <a href="">Mentions légales</a>
+          <a href="">CGV</a>
+          <a href="formulaire_contact.html">Contact</a>
+          <a href="">Plan du site</a>
+          <a href="">Imprimer la page</a>
+        </p>
+        <p class="copyrightParimis"><small>&copy; 2021 - PARIMIS</small></p>
+        <p class="phraseFooter"><small>Ce site n'a aucun but commercial. Il est realisé dans le cadre d'un projet d'intégration web au sein de l'organisme de formation DORANCO.</small></p>
+        <!-- BOUTON TO TOP -->
+        <p><a class="totop" href="#"><i class="fas fa-chevron-up fa-2x"></i></a></p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+  </body>
+</html>
